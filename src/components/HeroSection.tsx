@@ -4,8 +4,8 @@ import mascot from "@/assets/mascot.png";
 import { MessageCircle, ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
-  const scrollToMenu = () => {
-    document.getElementById("menu")?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -52,7 +52,7 @@ const HeroSection = () => {
                   Pesan Sekarang!
                 </a>
               </Button>
-              <Button variant="outline" size="xl" onClick={scrollToMenu}>
+              <Button variant="outline" size="xl" onClick={() => scrollTo("menu")}>
                 Lihat Menu
               </Button>
             </div>
@@ -107,9 +107,9 @@ const HeroSection = () => {
 
       {/* Scroll indicator */}
       <button 
-        onClick={scrollToMenu}
+        onClick={() => scrollTo("about")}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-muted-foreground hover:text-primary transition-colors cursor-pointer"
-        aria-label="Scroll ke menu"
+        aria-label="Scroll ke tentang kami"
       >
         <span className="text-sm mb-2">Scroll</span>
         <ChevronDown className="w-6 h-6 animate-bounce" />

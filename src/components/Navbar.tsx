@@ -20,6 +20,7 @@ const Navbar = () => {
     { label: "Menu", href: "#menu" },
     { label: "Tentang", href: "#about" },
     { label: "Testimoni", href: "#testimonials" },
+    { label: "Dokumentasi", href: "#documentation" },
   ];
 
   return (
