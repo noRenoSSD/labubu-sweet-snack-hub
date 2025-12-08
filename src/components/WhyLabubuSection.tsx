@@ -58,17 +58,17 @@ const WhyLabubuSection = () => {
           {benefits.map((benefit, index) => (
             <div
               key={benefit.title}
-              className="group rounded-2xl bg-background border border-border hover:border-primary/50 hover:shadow-card transition-all duration-300 overflow-hidden"
+              className="group rounded-2xl bg-background border border-border hover:border-primary/50 hover:shadow-card transition-all duration-300 overflow-hidden flex flex-col h-full max-h-[450px] md:max-h-[500px]"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-full h-44 md:h-56 lg:h-64 overflow-hidden">
+              <div className="w-full h-44 md:h-56 lg:h-64 flex-shrink-0 overflow-hidden">
                 <img
                   src={benefit.image}
                   alt={benefit.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 flex-1 overflow-y-auto">
                 <h3 className="text-lg font-bold text-foreground mb-2">{benefit.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
               </div>

@@ -23,6 +23,8 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
 import FAQSection from "@/components/FAQSection";
+import SplashScreen from "@/components/SplashScreen";
+import { useState } from "react";
 
 const documentationData = [
   {
@@ -117,6 +119,12 @@ const DocumentationSection = () => {
 
 
 const Index = () => {
+  const [showSplash, setShowSplash] = useState(true);
+
+  if (showSplash) {
+    return <SplashScreen duration={1600} onFinish={() => setShowSplash(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
