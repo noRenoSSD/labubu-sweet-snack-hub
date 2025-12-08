@@ -44,8 +44,8 @@ const documentationData = [
 
 const DocumentationSection = () => {
   return (
-    <section id="documentation" className="w-full py-12 md:py-24 lg:py-32 bg-white">
-      <div className="container px-4 md:px-6">
+    <section id="documentation" className="w-full py-12 md:py-24 lg:py-32 bg-white overflow-hidden">
+      <div className="container px-4 md:px-6 overflow-hidden">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Dokumentasi Kami</h2>
@@ -66,7 +66,7 @@ const DocumentationSection = () => {
               delay: 3000,
             }),
           ]}
-          className="w-full max-w-4xl mx-auto mt-12"
+          className="w-full max-w-3xl mx-auto mt-8 px-4"
         >
           <CarouselContent>
             {documentationData.map((item, index) => (
@@ -79,22 +79,22 @@ const DocumentationSection = () => {
                           <img
                             src={item.images[0]}
                             alt={item.title}
-                            className="aspect-video object-cover rounded-lg mb-4"
+                            className="w-full h-[220px] md:h-[300px] object-cover rounded-lg mb-4 max-w-full"
                           />
                           <h3 className="text-lg font-semibold">{item.title}</h3>
                         </CardContent>
                       </Card>
                     </DialogTrigger>
-                    <DialogContent className="sm:max-w-[425px]">
+                    <DialogContent className="sm:max-w-[600px]">
                       <DialogHeader>
                         <DialogTitle>{item.title}</DialogTitle>
                         <DialogDescription>{item.description}</DialogDescription>
                       </DialogHeader>
-                      <Carousel className="w-full max-w-xs">
+                      <Carousel className="w-full max-w-md">
                         <CarouselContent>
                           {item.images.map((image, i) => (
                             <CarouselItem key={i}>
-                              <img src={image} alt={`${item.title} - ${i + 1}`} className="w-full h-auto" />
+                              <img src={image} alt={`${item.title} - ${i + 1}`} className="w-full h-auto max-h-[70vh] object-contain" />
                             </CarouselItem>
                           ))}
                         </CarouselContent>
@@ -118,7 +118,7 @@ const DocumentationSection = () => {
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Navbar />
       <main>
         <HeroSection />
