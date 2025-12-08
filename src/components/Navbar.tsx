@@ -30,11 +30,11 @@ const Navbar = () => {
       }`}
     >
       <div className="container">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-16 lg:h-20 px-2 md:px-0">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <img src={mascot} alt="Labubu" className="w-10 h-10 lg:w-12 lg:h-12" />
-            <span className="text-xl lg:text-2xl font-bold text-gradient-purple">LABUBU</span>
+          <a href="#" className="flex items-center gap-2 flex-shrink-0 min-w-0">
+            <img src={mascot} alt="Labubu" className="w-10 h-10 lg:w-12 lg:h-12 flex-shrink-0" />
+            <span className="text-lg md:text-xl lg:text-2xl font-bold text-gradient-purple whitespace-nowrap">LABUBU</span>
           </a>
 
           {/* Desktop Nav */}
@@ -53,7 +53,7 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="hero" size="default" asChild>
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6285867838437" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4" />
                 Pesan
               </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
               ))}
               <div className="px-4 pt-2">
                 <Button variant="hero" className="w-full" asChild>
-                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/6285867838437" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4" />
                     Pesan Sekarang
                   </a>

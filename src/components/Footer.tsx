@@ -1,12 +1,12 @@
 import mascot from "@/assets/mascot.png";
-import { Instagram, MessageCircle, Music2 } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-foreground text-background py-16">
-      <div className="container">
+      <div id="contact" className="container">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
@@ -28,9 +28,9 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Menu</h4>
             <ul className="space-y-2 text-background/70">
               <li><a href="#menu" className="hover:text-background transition-colors">Produk</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">Tentang Kami</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">FAQ</a></li>
-              <li><a href="#" className="hover:text-background transition-colors">Kontak</a></li>
+              <li><a href="#about" className="hover:text-background transition-colors">Tentang Kami</a></li>
+              <li><a href="#faq" className="hover:text-background transition-colors">FAQ</a></li>
+              <li><a href="#contact" className="hover:text-background transition-colors">Kontak</a></li>
             </ul>
           </div>
 
@@ -39,8 +39,8 @@ const Footer = () => {
             <h4 className="font-bold text-lg mb-4">Hubungi Kami</h4>
             <ul className="space-y-2 text-background/70">
               <li>📍 Tembalang, Semarang</li>
-              <li>📞 +62 812-3456-7890</li>
-              <li>📧 hello@labubu.id</li>
+              <li>📞 +62 858 6783 8437</li>
+              <li>📧 eatlumpia@gmail.com</li>
             </ul>
           </div>
         </div>
@@ -54,21 +54,16 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex gap-4">
             <a
-              href="#"
+              href="https://www.instagram.com/eatlumpia.labubu/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
             <a
-              href="#"
-              className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
-              aria-label="TikTok"
-            >
-              <Music2 className="w-5 h-5" />
-            </a>
-            <a
-              href="https://wa.me/6281234567890"
+              href="https://wa.me/6285867838437"
               className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center hover:bg-background/20 transition-colors"
               aria-label="WhatsApp"
             >
@@ -77,6 +72,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
     </footer>
   );
 };

@@ -21,7 +21,7 @@ const OrderSection = () => {
         </div>
 
         {/* Order Methods */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-12">
           {/* WhatsApp */}
           <div className="p-6 rounded-2xl bg-card border border-border shadow-soft hover:shadow-card transition-all duration-300">
             <div className="w-14 h-14 rounded-xl bg-[hsl(142_70%_45%)] flex items-center justify-center mb-4">
@@ -30,42 +30,22 @@ const OrderSection = () => {
             <h3 className="text-xl font-bold text-foreground mb-2">WhatsApp</h3>
             <p className="text-muted-foreground text-sm mb-4">Chat langsung untuk order cepat dan tanya-tanya produk</p>
             <Button variant="whatsapp" className="w-full" asChild>
-              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/6285867838437" target="_blank" rel="noopener noreferrer">
                 Chat Sekarang
               </a>
             </Button>
           </div>
 
-          {/* E-commerce */}
-          <div className="p-6 rounded-2xl bg-card border border-border shadow-soft hover:shadow-card transition-all duration-300">
-            <div className="w-14 h-14 rounded-xl gradient-gold flex items-center justify-center mb-4">
-              <ShoppingBag className="w-7 h-7 text-secondary-foreground" />
-            </div>
-            <h3 className="text-xl font-bold text-foreground mb-2">E-Commerce</h3>
-            <p className="text-muted-foreground text-sm mb-4">Tersedia di Shopee & Tokopedia dengan berbagai promo</p>
-            <div className="flex gap-2">
-              <Button variant="outline" size="sm" className="flex-1" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">Shopee</a>
-              </Button>
-              <Button variant="outline" size="sm" className="flex-1" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">Tokopedia</a>
-              </Button>
-            </div>
-          </div>
-
-          {/* Social Media */}
+          {/* Social Media (Instagram only) */}
           <div className="p-6 rounded-2xl bg-card border border-border shadow-soft hover:shadow-card transition-all duration-300">
             <div className="w-14 h-14 rounded-xl gradient-hero flex items-center justify-center mb-4">
               <span className="text-2xl">📱</span>
             </div>
             <h3 className="text-xl font-bold text-foreground mb-2">Social Media</h3>
-            <p className="text-muted-foreground text-sm mb-4">DM kami di Instagram atau TikTok untuk pemesanan</p>
+            <p className="text-muted-foreground text-sm mb-4">DM kami di Instagram untuk pemesanan</p>
             <div className="flex gap-2">
               <Button variant="outline" size="sm" className="flex-1" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-              </Button>
-              <Button variant="outline" size="sm" className="flex-1" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">TikTok</a>
+                <a href="https://www.instagram.com/eatlumpia.labubu/" target="_blank" rel="noopener noreferrer">Instagram</a>
               </Button>
             </div>
           </div>
@@ -108,7 +88,7 @@ const OrderSection = () => {
             Pesan sekarang dan rasakan sensasi lumpia ubi ungu yang sehat, enak, dan bikin nagih!
           </p>
           <Button variant="hero" size="xl" asChild>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6285867838437" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Pesan via WhatsApp
             </a>

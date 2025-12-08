@@ -80,40 +80,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Community Programs */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* LABUBU Challenge */}
-          <div className="p-6 rounded-2xl gradient-card border border-border shadow-soft">
-            <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-xl gradient-gold flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">🏆</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">LABUBU Challenge</h3>
-                <p className="text-muted-foreground text-sm mb-3">
-                  Ikuti tantangan bulanan dengan hashtag <span className="text-primary font-semibold">#LabubuSnackChallenge</span> dan menangkan hadiah menarik!
-                </p>
-                <a href="#" className="text-primary font-semibold text-sm hover:underline">Lihat Challenge →</a>
-              </div>
-            </div>
-          </div>
-
-          {/* LABUBU Story */}
-          <div className="p-6 rounded-2xl gradient-card border border-border shadow-soft">
-            <div className="flex items-start gap-4">
-              <div className="w-14 h-14 rounded-xl gradient-hero flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl">📸</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold text-foreground mb-2">LABUBU Story</h3>
-                <p className="text-muted-foreground text-sm mb-3">
-                  Share pengalaman Labubu-mu di media sosial dan dapatkan kesempatan di-repost di akun kami!
-                </p>
-                <a href="#" className="text-primary font-semibold text-sm hover:underline">Bagikan Ceritamu →</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Community Programs removed per request */}
       </div>
     </section>
   );

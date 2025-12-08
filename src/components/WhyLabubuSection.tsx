@@ -1,4 +1,6 @@
-import { Heart, Leaf, Shield, Sparkles } from "lucide-react";
+import { Heart, Leaf, Shield, Sparkles, X } from "lucide-react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const benefits = [
   {
@@ -23,7 +25,11 @@ const benefits = [
   },
 ];
 
+const ubiUnguFullDescription = "Ubi ungu (Ipomoea batatas L. var. Ayamurasaki) adalah jenis umbi-umbian yang kaya akan nutrisi lengkap. Kandungan antosianin dalam ubi ungu adalah pigmen alami yang memberikan warna ungu dan berfungsi sebagai antioksidan kuat untuk melawan radikal bebas. Selain itu, ubi ungu mengandung karbohidrat kompleks yang dicerna lebih lambat, sehingga tidak menyebabkan lonjakan gula darah yang drastis. Tingginya kandungan serat membantu pencernaan dan membuat Anda merasa lebih lama kenyang. Ubi ungu juga kaya akan kalium, vitamin C, vitamin A, dan mineral penting lainnya yang mendukung kesehatan mata, kulit, dan sistem imun tubuh. Dengan tekstur yang lembut dan rasa yang alami manis, ubi ungu menjadi bahan baku sempurna untuk camilan sehat yang lezat tanpa perlu menambahkan pewarna atau pemanis buatan.";
+
 const WhyLabubuSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section id="about" className="py-20 lg:py-32 bg-card relative overflow-hidden">
       {/* Background decoration */}
@@ -71,14 +77,54 @@ const WhyLabubuSection = () => {
             </div>
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-bold text-foreground mb-2">Bahan Utama: Ubi Ungu</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground line-clamp-2 mb-4">
                 Ubi ungu kaya akan antosianin (antioksidan), karbohidrat kompleks, dan serat tinggi. 
                 Camilan lokal unik dengan sentuhan modern yang bikin nagih!
               </p>
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => setIsModalOpen(true)}
+              >
+                Lihat Lebih Lanjut
+              </Button>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Modal Popup */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-card rounded-3xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-lg">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">Bahan Utama: Ubi Ungu</h2>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="Tutup modal"
+              >
+                <X className="w-6 h-6" />
+              </button>
+            </div>
+            <div className="flex justify-center mb-6">
+              <div className="w-24 h-24 rounded-full gradient-hero flex items-center justify-center">
+                <span className="text-4xl">🍠</span>
+              </div>
+            </div>
+            <p className="text-muted-foreground leading-relaxed mb-6">
+              {ubiUnguFullDescription}
+            </p>
+            <Button 
+              variant="hero" 
+              className="w-full"
+              onClick={() => setIsModalOpen(false)}
+            >
+              Tutup
+            </Button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

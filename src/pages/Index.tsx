@@ -22,21 +22,22 @@ import {
 } from "@/components/ui/dialog";
 import { Card, CardContent } from "@/components/ui/card";
 import Autoplay from "embla-carousel-autoplay";
+import FAQSection from "@/components/FAQSection";
 
 const documentationData = [
   {
     title: "Bazar PMW",
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    images: ["/docs/pmw1.jpeg", "/docs/pmw2.jpeg"],
     description: "Partisipasi kami di Bazar Program Mahasiswa Wirausaha (PMW) yang diselenggarakan oleh universitas.",
   },
   {
     title: "Bazar Tata Niaga Polines",
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
-    description: "Kehadiran kami di Bazar Tata Niaga yang diadakan oleh Politeknik Negeri Semarang.",
+    images: ["/placeholder.svg"],
+    description: "Coming Soon",
   },
   {
     title: "CFD SiKatak Undip",
-    images: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg"],
+    images: ["/docs/cfdsikatak1.jpeg", "/docs/cfdsikatak2.jpeg"],
     description: "Kami turut meramaikan Car Free Day (CFD) di area SiKatak, Universitas Diponegoro.",
   },
 ];
@@ -125,6 +126,7 @@ const Index = () => {
         <MenuSection />
         <TestimonialsSection />
         <DocumentationSection />
+        <FAQSection />
         <OrderSection />
       </main>
       <Footer />

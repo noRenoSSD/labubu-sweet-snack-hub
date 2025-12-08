@@ -2,14 +2,13 @@ import { Button } from "@/components/ui/button";
 import productChocolate from "@/assets/product-chocolate.jpg";
 import productMatcha from "@/assets/product-matcha.jpg";
 import productTiramisu from "@/assets/product-tiramisu.jpg";
-import productOreo from "@/assets/product-oreo.jpg";
 import { MessageCircle } from "lucide-react";
 
 const toppings = [
   {
-    name: "Chocolate",
+    name: "Saus Coklat",
     image: productChocolate,
-    description: "Lelehan coklat premium yang manis dan creamy",
+    description: "Saus coklat premium yang manis dan creamy",
     popular: true,
   },
   {
@@ -23,12 +22,6 @@ const toppings = [
     image: productTiramisu,
     description: "Kombinasi kopi dan mascarpone yang elegan",
     popular: false,
-  },
-  {
-    name: "Oreo",
-    image: productOreo,
-    description: "Remahan Oreo crunchy untuk sensasi berbeda",
-    popular: true,
   },
 ];
 
@@ -53,7 +46,7 @@ const MenuSection = () => {
         </div>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-6 mb-12">
           {toppings.map((topping, index) => (
             <div
               key={topping.name}
@@ -119,7 +112,7 @@ const MenuSection = () => {
         {/* CTA */}
         <div className="text-center">
           <Button variant="hero" size="xl" asChild>
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/6285867838437" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5" />
               Pesan Sekarang
             </a>
