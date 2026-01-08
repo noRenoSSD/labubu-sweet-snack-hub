@@ -11,14 +11,14 @@ const testimonials = [
   {
     name: "Budi Santoso",
     role: "Karyawan Swasta",
-    content: "Sebagai penderita diabetes, akhirnya bisa ngemil manis yang aman. Rasa tidak kalah dengan camilan biasa!",
+    content: "Sebagai penderita diabetes, akhirnya bisa ngemil manis yang aman. Rasanya tidak kalah dengan camilan biasa!",
     rating: 5,
     avatar: "BS",
   },
   {
     name: "Maya Kusuma",
-    role: "Food Blogger",
-    content: "Konsep yang unik! Perpaduan tradisional dan modern. Wajib coba kalau ke Semarang.",
+    role: "Mahasiswi Polines",
+    content: "Konsep yang unik! Perpaduan tradisional dan modern. Wajib dicoba biar gak ketinggalan!.",
     rating: 5,
     avatar: "MK",
   },
