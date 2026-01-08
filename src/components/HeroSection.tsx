@@ -97,7 +97,7 @@ const HeroSection = () => {
               {/* Floating price tag */}
               <div className="absolute -bottom-3 -right-3 sm:-bottom-4 sm:-right-4 lg:bottom-8 lg:-right-8 bg-card rounded-2xl shadow-card p-3 sm:p-4 animate-bounce-slow text-sm sm:text-base" style={{ animationDelay: "1s" }}>
                 <p className="text-xs text-muted-foreground">Mulai dari</p>
-                <p className="text-xl sm:text-2xl font-bold text-primary">Rp 12.000</p>
+                <p className="text-xl sm:text-2xl font-bold text-primary">Rp 3.000</p>
                 <p className="text-xs text-muted-foreground">/pcs</p>
               </div>
             </div>

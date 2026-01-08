@@ -88,7 +88,7 @@ const MenuSection = () => {
                 Ready To Eat
               </span>
               <p className="text-4xl font-bold text-foreground mb-1">
-                Rp 12.000<span className="text-lg font-normal text-muted-foreground">/pcs</span>
+                Rp 3.000<span className="text-lg font-normal text-muted-foreground">/pcs</span>
               </p>
               <p className="text-muted-foreground text-sm">Langsung santap, hangat & renyah</p>
             </div>
